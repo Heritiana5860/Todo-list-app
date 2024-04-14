@@ -2,7 +2,7 @@ const StyleAffichage = ({data, handleDelete}) =>{
 
     const affiche = data.length ? data.map(dt =>{
         return(
-            <div key={dt.id} className="card" onClick={() =>handleDelete(dt.id)}>
+            <div key={dt.id} className="card div-affich" onClick={() =>handleDelete(dt.id)}>
                 <p>Nom: { dt.nom }</p>
                 <p>Prenom: { dt.prenom}</p>
             </div>
